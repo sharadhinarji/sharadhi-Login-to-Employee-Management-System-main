@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Employee Management</h1>
+
+<!-- Form to add an employee -->
+<form id="employeeForm">
+    <input type="text" id="employeeId" placeholder="Employee ID (auto-generated)" disabled>
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Add Employee</button>
+</form>
+
+<!-- Table to display employees -->
+<table>
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="employeeTable">
+        <!-- Employee rows will be added dynamically here -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
